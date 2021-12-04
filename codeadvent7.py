@@ -1,0 +1,1 @@
+print('\033[31m' + 'Hello' + '\033[0m')  # Red text
