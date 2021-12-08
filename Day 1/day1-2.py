@@ -1,7 +1,7 @@
 counterBigger = 0
 counterAll = 0
 numbers = []
-with open("numbers1.txt", 'r') as file:
+with open("numbers.txt", 'r') as file:
     for line in file:
         numbers.append(int(line))
         counterAll = counterAll + 1
