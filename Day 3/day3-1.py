@@ -1,3 +1,4 @@
+#https://adventofcode.com/2021/day/3
 lines = []
 values = []
 linesCounter = 0
@@ -32,5 +33,3 @@ for character in values:
     counter = counter - 1
 
 print(gammaValue * epsilonValue)
-
-

@@ -1,3 +1,4 @@
+#https://adventofcode.com/2021/day/1
 counterBigger = 0
 counterAll = 0
 with open("numbers.txt", 'r') as file:

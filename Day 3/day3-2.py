@@ -1,3 +1,4 @@
+#https://adventofcode.com/2021/day/3
 oxygenArray = []
 scrubberArray = []
 with open("binary.txt", 'r') as file:

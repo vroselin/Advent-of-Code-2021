@@ -1,3 +1,4 @@
+#https://adventofcode.com/2021/day/4
 from operator import itemgetter
 lineCounter = 0
 bingoBoard = []
