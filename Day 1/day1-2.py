@@ -1,4 +1,4 @@
-#https://adventofcode.com/2021/day/1
+#https://adventofcode.com/2021/day/1#part2
 counterBigger = 0
 counterAll = 0
 numbers = []
