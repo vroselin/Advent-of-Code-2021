@@ -1,8 +1,8 @@
-#https://adventofcode.com/2021/day/5
+#https://adventofcode.com/2021/day/5#part2
 largestNumberX = 0
 largestNumberY = 0
 coordinatesList = []
-with open("input.txt", 'r') as file:
+with open("testinput.txt", 'r') as file:
     for line in file:
             line = line.strip()
             line_splitted = line.split('->')
@@ -52,9 +52,18 @@ for coordinates in coordinatesList:
     if startX == endX:
         for i in range (startY, endY + 1 ):
             diagram[startX][i] = diagram[startX][i] + 1
-    if startY == endY:
+    elif startY == endY:
         for i in range(startX, endX + 1):
             diagram[i][startY] = diagram[i][startY] + 1
+    else:
+        if abs(int(startingPoint[0]) - int(startingPoint[1])) == abs(int(endPoint[0]) - int(endPoint[1])):
+            j = startY
+            for i in range(startX, endX + 1):
+                #print(str(i) + ',' +  str(j))
+                diagram[i][j] = diagram[i][j] + 1
+                j = j + 1
+                if j == endY:
+                    break
 
 
 overlapcounter = 0
